@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ButtonModule } from 'primeng/button';
+import { PrimengModule } from './primeng/primeng.module';
+import { SharedModule } from './shared/shared.module';
+import { ProductsModule } from './products/products.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    SharedModule,
     BrowserModule,
     AppRoutingModule,
-    ButtonModule
+    PrimengModule,
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
