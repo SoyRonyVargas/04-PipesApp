@@ -9,3 +9,16 @@ body
 {
   margin-right: 1rem;
 }
+
+.container
+{
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.custom-card > .p-card
+{
+  /* background-color: #0b213f; */
+  background-color: #040d19;
+}

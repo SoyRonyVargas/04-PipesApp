@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicsPageComponent implements OnInit {
 
+  public nameLower = 'pipes app';
+  public nameUpper = 'PIPES APP';
+  public fullName = 'pIpeS aPP';
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

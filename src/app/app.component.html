@@ -1,16 +1,8 @@
 
 <shared-menu></shared-menu>
 
-<h1> {{ title }} </h1>
-<h1> {{ title | uppercase }} </h1>
-<h1> {{ title | lowercase }} </h1>
-<h1> {{ title | titlecase }} </h1>
-<h1> {{ title | slice:0:5 | titlecase }} </h1>
-
-<p-button label="Submit"></p-button>
-<div class="card flex justify-content-center">
-  <button pButton pRipple label="Submit" class="p-button-success"></button>
-  <p-button label="Submit" icon="pi pi-check"></p-button>
-</div>
+<main class="container mt-5">
 
 <router-outlet></router-outlet>
+
+</main>

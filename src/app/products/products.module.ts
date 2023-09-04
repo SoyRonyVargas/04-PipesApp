@@ -4,16 +4,18 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
 import { NumbersPageComponent } from './pages/numbers-page/numbers-page.component';
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
+import { PrimengModule } from '../primeng/primeng.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    PrimengModule
   ],
   declarations: [
     BasicsPageComponent,
     NumbersPageComponent,
-    UncommonPageComponent
+    UncommonPageComponent,
   ]
 })
 export class ProductsModule { }

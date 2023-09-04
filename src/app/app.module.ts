@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PrimengModule } from './primeng/primeng.module';
 import { SharedModule } from './shared/shared.module';
 import { ProductsModule } from './products/products.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ProductsModule } from './products/products.module';
   imports: [
     SharedModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     PrimengModule,
     ProductsModule
