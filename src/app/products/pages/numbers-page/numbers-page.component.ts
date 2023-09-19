@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NumbersPageComponent implements OnInit {
 
+  public numero:number = Math.PI
+  public porcentaje:number = 0.50
+
   constructor() { }
 
   ngOnInit(): void {

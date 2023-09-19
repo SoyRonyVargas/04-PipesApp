@@ -1,1 +1,31 @@
-<p>numbers-page works!</p>
+<p-panel class="mt-3 block" header="Pipes númericos">
+
+  <div class="grid">
+
+    <article class="col-12 md:col-4">
+      <p-card class="custom-card" header="Number">
+        {{ numero | number }}
+      </p-card>
+    </article>
+
+    <article class="col-12 md:col-4">
+      <p-card class="custom-card" header="Dos decimales">
+        {{ numero | number:'1.2-2' }}
+      </p-card>
+    </article>
+
+    <article class="col-12 md:col-4">
+      <p-card class="custom-card" header="Currency - Yenes Japoneses">
+        {{ numero | currency:'JPY':'symbol-narrow':'1.2-2' }}
+      </p-card>
+    </article>
+
+    <article class="col-12 md:col-4">
+      <p-card class="custom-card" header="Percent">
+        {{ porcentaje | percent:'1.2-2' }}
+      </p-card>
+    </article>
+
+  </div>
+
+</p-panel>

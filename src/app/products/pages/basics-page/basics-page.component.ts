@@ -11,6 +11,8 @@ export class BasicsPageComponent implements OnInit {
   public nameUpper = 'PIPES APP';
   public fullName = 'pIpeS aPP';
 
+  public fechaActual = new Date();
+
   constructor() { }
 
   ngOnInit(): void {
