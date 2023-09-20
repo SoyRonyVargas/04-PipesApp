@@ -9,8 +9,34 @@
                 a nuestro evento.
             </p>  
 
-            <p-button (click)="handleChangeGender()">
+            <p-button styleClass="p-button-sm" (click)="handleChangeGender()">
                 Cambiar
+            </p-button>
+
+        </p-card>
+      </article>
+  
+      <article class="col-12 md:col-4">
+        <p-card class="custom-card" header="i18nPlural Pipe">
+            <p>
+              {{ clientes.length | i18nPlural:clientsMap }} 
+            </p>  
+
+            <p-button styleClass="p-button-danger p-button-rounded p-button-sm" (click)="handleEliminarCliente()">
+              Eliminar
+            </p-button>
+
+        </p-card>
+      </article>
+  
+      <article class="col-12 md:col-4">
+        <p-card class="custom-card" header="Slice Pipe">
+            <p>
+              {{ clientes | slice:0:3 }} 
+            </p>  
+
+            <p-button styleClass="p-button-danger p-button-rounded p-button-sm" (click)="handleEliminarCliente()">
+              Eliminar
             </p-button>
 
         </p-card>

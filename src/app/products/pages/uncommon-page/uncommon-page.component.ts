@@ -7,11 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UncommonPageComponent implements OnInit {
 
-
-  // i18nSelect
-
   public name: string = "Maximiliano"
   public gender: string = "Male"
+  public clientes: string[] = [
+    "Juan Pérez",
+    "María García",
+    "Carlos López",
+    "Ana Rodríguez",
+    "Luisa Martínez",
+  ];
+
+  public clientsMap = {
+    '=0': 'No tenemos ningun cliente esperando',
+    '=1': 'Tenemos un cliente esperando',
+    'other': 'Tenemos # clientes esperando'
+  }
 
   public invitationMap = {
     'Male': 'invitarlo',
@@ -23,9 +33,12 @@ export class UncommonPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleEliminarCliente(){
+    this.clientes.pop()
+  }
+
   handleChangeGender()
   {
-    debugger
     this.name = 'Mariana'
     this.gender = "Female"
   }
