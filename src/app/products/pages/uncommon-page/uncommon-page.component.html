@@ -34,11 +34,16 @@
             <p>
               {{ clientes | slice:0:3 }} 
             </p>  
-
-            <p-button styleClass="p-button-danger p-button-rounded p-button-sm" (click)="handleEliminarCliente()">
-              Eliminar
-            </p-button>
-
+        </p-card>
+      </article>
+      
+      <article class="col-12 md:col-4">
+        <p-card class="custom-card" header="KeyValuePipe">
+          <ul>
+            <li *ngFor="let item of person | keyvalue">
+              {{ item | json }}
+            </li>
+          </ul> 
         </p-card>
       </article>
   

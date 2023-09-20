@@ -28,6 +28,12 @@ export class UncommonPageComponent implements OnInit {
     'Female': 'invitarla'
   }
 
+  public person = {
+    name: 'Edison',
+    age: 18,
+    gender: 'Male'
+  }
+
   constructor() { }
 
   ngOnInit(): void {
