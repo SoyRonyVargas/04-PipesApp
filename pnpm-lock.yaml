@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@angular/animations':
-    specifier: ^14.1.0
-    version: 14.1.0(@angular/core@14.1.0)
+    specifier: ^14.3.0
+    version: 14.3.0(@angular/core@14.1.0)
   '@angular/common':
     specifier: ^14.1.0
     version: 14.1.0(@angular/core@14.1.0)(rxjs@7.5.0)
@@ -18,22 +22,25 @@ dependencies:
     version: 14.1.0(@angular/common@14.1.0)(@angular/core@14.1.0)(@angular/platform-browser@14.1.0)(rxjs@7.5.0)
   '@angular/platform-browser':
     specifier: ^14.1.0
-    version: 14.1.0(@angular/animations@14.1.0)(@angular/common@14.1.0)(@angular/core@14.1.0)
+    version: 14.1.0(@angular/animations@14.3.0)(@angular/common@14.1.0)(@angular/core@14.1.0)
   '@angular/platform-browser-dynamic':
     specifier: ^14.1.0
     version: 14.1.0(@angular/common@14.1.0)(@angular/compiler@14.1.0)(@angular/core@14.1.0)(@angular/platform-browser@14.1.0)
   '@angular/router':
     specifier: ^14.1.0
     version: 14.1.0(@angular/common@14.1.0)(@angular/core@14.1.0)(@angular/platform-browser@14.1.0)(rxjs@7.5.0)
+  primeflex:
+    specifier: ^3.3.1
+    version: 3.3.1
   primeng:
-    specifier: ^16.3.1
-    version: 16.3.1(@angular/common@14.1.0)(@angular/core@14.1.0)(@angular/forms@14.1.0)(rxjs@7.5.0)(zone.js@0.11.4)
+    specifier: ^14.2.3
+    version: 14.2.3(@angular/common@14.1.0)(@angular/core@14.1.0)(@angular/forms@14.1.0)(primeicons@6.0.1)(rxjs@7.5.0)(zone.js@0.11.4)
   rxjs:
     specifier: ~7.5.0
     version: 7.5.0
   tslib:
-    specifier: ^2.3.0
-    version: 2.3.0
+    specifier: ^2.6.2
+    version: 2.6.2
   zone.js:
     specifier: ~0.11.4
     version: 0.11.4
@@ -254,14 +261,14 @@ packages:
       - chokidar
     dev: true
 
-  /@angular/animations@14.1.0(@angular/core@14.1.0):
-    resolution: {integrity: sha512-OhEXi1u/M4QyltDCxSqo7YzF7ELgNDWNqbbM7vtWIcrc4c+Yiu1GXhW/GQRosF3WAuQVfdQzEI0VTeNoo98Kvw==}
+  /@angular/animations@14.3.0(@angular/core@14.1.0):
+    resolution: {integrity: sha512-QoBcIKy1ZiU+4qJsAh5Ls20BupWiXiZzKb0s6L9/dntPt5Msr4Ao289XR2P6O1L+kTsCprH9Kt41zyGQ/bkRqg==}
     engines: {node: ^14.15.0 || >=16.10.0}
     peerDependencies:
-      '@angular/core': 14.1.0
+      '@angular/core': 14.3.0
     dependencies:
       '@angular/core': 14.1.0(rxjs@7.5.0)(zone.js@0.11.4)
-      tslib: 2.3.0
+      tslib: 2.6.2
     dev: false
 
   /@angular/cli@14.1.1:
@@ -304,7 +311,7 @@ packages:
     dependencies:
       '@angular/core': 14.1.0(rxjs@7.5.0)(zone.js@0.11.4)
       rxjs: 7.5.0
-      tslib: 2.3.0
+      tslib: 2.6.2
     dev: false
 
   /@angular/compiler-cli@14.1.0(@angular/compiler@14.1.0)(typescript@4.7.2):
@@ -324,7 +331,7 @@ packages:
       reflect-metadata: 0.1.13
       semver: 7.5.4
       sourcemap-codec: 1.4.8
-      tslib: 2.3.0
+      tslib: 2.6.2
       typescript: 4.7.2
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -341,7 +348,7 @@ packages:
         optional: true
     dependencies:
       '@angular/core': 14.1.0(rxjs@7.5.0)(zone.js@0.11.4)
-      tslib: 2.3.0
+      tslib: 2.6.2
 
   /@angular/core@14.1.0(rxjs@7.5.0)(zone.js@0.11.4):
     resolution: {integrity: sha512-3quEsHmQifJOQ2oij5K+cjGjmhsKsyZI1+OTHWNZ6IXeuYviZv4U/Cui9fUJ1RN3CZxH3NzWB3gB/5qYFQfOgg==}
@@ -351,7 +358,7 @@ packages:
       zone.js: ~0.11.4
     dependencies:
       rxjs: 7.5.0
-      tslib: 2.3.0
+      tslib: 2.6.2
       zone.js: 0.11.4
 
   /@angular/forms@14.1.0(@angular/common@14.1.0)(@angular/core@14.1.0)(@angular/platform-browser@14.1.0)(rxjs@7.5.0):
@@ -365,9 +372,9 @@ packages:
     dependencies:
       '@angular/common': 14.1.0(@angular/core@14.1.0)(rxjs@7.5.0)
       '@angular/core': 14.1.0(rxjs@7.5.0)(zone.js@0.11.4)
-      '@angular/platform-browser': 14.1.0(@angular/animations@14.1.0)(@angular/common@14.1.0)(@angular/core@14.1.0)
+      '@angular/platform-browser': 14.1.0(@angular/animations@14.3.0)(@angular/common@14.1.0)(@angular/core@14.1.0)
       rxjs: 7.5.0
-      tslib: 2.3.0
+      tslib: 2.6.2
     dev: false
 
   /@angular/platform-browser-dynamic@14.1.0(@angular/common@14.1.0)(@angular/compiler@14.1.0)(@angular/core@14.1.0)(@angular/platform-browser@14.1.0):
@@ -382,11 +389,11 @@ packages:
       '@angular/common': 14.1.0(@angular/core@14.1.0)(rxjs@7.5.0)
       '@angular/compiler': 14.1.0(@angular/core@14.1.0)
       '@angular/core': 14.1.0(rxjs@7.5.0)(zone.js@0.11.4)
-      '@angular/platform-browser': 14.1.0(@angular/animations@14.1.0)(@angular/common@14.1.0)(@angular/core@14.1.0)
-      tslib: 2.3.0
+      '@angular/platform-browser': 14.1.0(@angular/animations@14.3.0)(@angular/common@14.1.0)(@angular/core@14.1.0)
+      tslib: 2.6.2
     dev: false
 
-  /@angular/platform-browser@14.1.0(@angular/animations@14.1.0)(@angular/common@14.1.0)(@angular/core@14.1.0):
+  /@angular/platform-browser@14.1.0(@angular/animations@14.3.0)(@angular/common@14.1.0)(@angular/core@14.1.0):
     resolution: {integrity: sha512-axNXUSqxsP0QSdNskd1pFo2uMo1UNoFaSAB02eDWwLkWQ1pWel+T78HiQY2bNeI3elgzjwPTT4vCCDQKNVTNig==}
     engines: {node: ^14.15.0 || >=16.10.0}
     peerDependencies:
@@ -397,10 +404,10 @@ packages:
       '@angular/animations':
         optional: true
     dependencies:
-      '@angular/animations': 14.1.0(@angular/core@14.1.0)
+      '@angular/animations': 14.3.0(@angular/core@14.1.0)
       '@angular/common': 14.1.0(@angular/core@14.1.0)(rxjs@7.5.0)
       '@angular/core': 14.1.0(rxjs@7.5.0)(zone.js@0.11.4)
-      tslib: 2.3.0
+      tslib: 2.6.2
     dev: false
 
   /@angular/router@14.1.0(@angular/common@14.1.0)(@angular/core@14.1.0)(@angular/platform-browser@14.1.0)(rxjs@7.5.0):
@@ -414,9 +421,9 @@ packages:
     dependencies:
       '@angular/common': 14.1.0(@angular/core@14.1.0)(rxjs@7.5.0)
       '@angular/core': 14.1.0(rxjs@7.5.0)(zone.js@0.11.4)
-      '@angular/platform-browser': 14.1.0(@angular/animations@14.1.0)(@angular/common@14.1.0)(@angular/core@14.1.0)
+      '@angular/platform-browser': 14.1.0(@angular/animations@14.3.0)(@angular/common@14.1.0)(@angular/core@14.1.0)
       rxjs: 7.5.0
-      tslib: 2.3.0
+      tslib: 2.6.2
     dev: false
 
   /@assemblyscript/loader@0.10.1:
@@ -3178,6 +3185,7 @@ packages:
 
   /debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    requiresBuild: true
     peerDependencies:
       supports-color: '*'
     peerDependenciesMeta:
@@ -4703,7 +4711,7 @@ packages:
     dependencies:
       copy-anything: 2.0.6
       parse-node-version: 1.0.1
-      tslib: 2.3.0
+      tslib: 2.6.2
     optionalDependencies:
       errno: 0.1.8
       graceful-fs: 4.2.11
@@ -5583,6 +5591,7 @@ packages:
   /pify@4.0.1:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -6023,20 +6032,30 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /primeng@16.3.1(@angular/common@14.1.0)(@angular/core@14.1.0)(@angular/forms@14.1.0)(rxjs@7.5.0)(zone.js@0.11.4):
-    resolution: {integrity: sha512-7HdAhng5Kj1nJ4KaXZyQousw/0VCQMzq4AyVt4HD+2fl52Bl13WZPV5a+P7SpMKOXVTEDed3U6EeAxDRpbu7iw==}
+  /primeflex@3.3.1:
+    resolution: {integrity: sha512-zaOq3YvcOYytbAmKv3zYc+0VNS9Wg5d37dfxZnveKBFPr7vEIwfV5ydrpiouTft8MVW6qNjfkaQphHSnvgQbpQ==}
+    dev: false
+
+  /primeicons@6.0.1:
+    resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
+    dev: false
+
+  /primeng@14.2.3(@angular/common@14.1.0)(@angular/core@14.1.0)(@angular/forms@14.1.0)(primeicons@6.0.1)(rxjs@7.5.0)(zone.js@0.11.4):
+    resolution: {integrity: sha512-4B+ahbjzPcLeYB/4hw7hqD2le0CplSblRORvY97EhW/0T0Vzyr+neVcnSmUAZ9HfyBdflR/WvZzcFuELFRC7kw==}
     peerDependencies:
-      '@angular/common': ^16.2.0
-      '@angular/core': ^16.2.0
-      '@angular/forms': ^16.2.0
-      rxjs: ^6.0.0 || ^7.8.1
-      zone.js: ~0.13.0
+      '@angular/common': ^14.0.0
+      '@angular/core': ^14.0.0
+      '@angular/forms': ^14.0.0
+      primeicons: ^6.0.1
+      rxjs: ^6.0.0 || ^7.0.0
+      zone.js: ^0.10.2 || ^0.11.0 || ^0.12.0
     dependencies:
       '@angular/common': 14.1.0(@angular/core@14.1.0)(rxjs@7.5.0)
       '@angular/core': 14.1.0(rxjs@7.5.0)(zone.js@0.11.4)
       '@angular/forms': 14.1.0(@angular/common@14.1.0)(@angular/core@14.1.0)(@angular/platform-browser@14.1.0)(rxjs@7.5.0)
+      primeicons: 6.0.1
       rxjs: 7.5.0
-      tslib: 2.3.0
+      tslib: 2.6.2
       zone.js: 0.11.4
     dev: false
 
@@ -6076,6 +6095,7 @@ packages:
 
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -6339,12 +6359,12 @@ packages:
   /rxjs@7.5.0:
     resolution: {integrity: sha512-fuCKAfFawVYX0pyFlETtYnXI+5iiY9Dftgk+VdgeOq+Qyi9ZDWckHZRDaXRt5WCNbbLkmAheoSGDiceyCIKNZA==}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.6.2
 
   /rxjs@7.5.7:
     resolution: {integrity: sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.6.2
     dev: true
 
   /safe-buffer@5.1.2:
@@ -6440,6 +6460,7 @@ packages:
   /semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -7005,12 +7026,12 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
-  /tslib@2.3.0:
-    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
-
   /tslib@2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: true
+
+  /tslib@2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
   /type-fest@0.21.3:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
@@ -7473,4 +7494,4 @@ packages:
   /zone.js@0.11.4:
     resolution: {integrity: sha512-DDh2Ab+A/B+9mJyajPjHFPWfYU1H+pdun4wnnk0OcQTNjem1XQSZ2CDW+rfZEUDjv5M19SBqAkjZi0x5wuB5Qw==}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.6.2

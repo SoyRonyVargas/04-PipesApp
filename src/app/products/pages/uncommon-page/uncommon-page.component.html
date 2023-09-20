@@ -1,1 +1,22 @@
-<p>uncommon-page works!</p>
+<p-panel class="mt-3 block" header="Pipes númericos">
+
+    <div class="grid">
+  
+      <article class="col-12 md:col-4">
+        <p-card class="custom-card" header="i18nSelect Pipe">
+            <p>
+                Saludos {{ name }}, es un placer {{ gender | i18nSelect:invitationMap }}
+                a nuestro evento.
+            </p>  
+
+            <p-button (click)="handleChangeGender()">
+                Cambiar
+            </p-button>
+
+        </p-card>
+      </article>
+  
+    </div>
+  
+  </p-panel>
+  
