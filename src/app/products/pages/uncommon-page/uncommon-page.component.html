@@ -47,6 +47,20 @@
         </p-card>
       </article>
   
+      <article class="col-12 md:col-4">
+        <p-card class="custom-card" header="Async Pipe">
+          <p style="margin: 0;">
+            {{ myObservableTimer | async }}
+          </p>
+          <p>
+            {{ myObservableTimer | json }}
+          </p>
+          <p>
+            {{ myPromise | async }}
+          </p>
+        </p-card>
+      </article>
+  
     </div>
   
   </p-panel>

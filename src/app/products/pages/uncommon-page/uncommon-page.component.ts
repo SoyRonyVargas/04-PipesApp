@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval , tap } from 'rxjs';
 
 @Component({
   selector: 'app-uncommon-page',
@@ -34,6 +35,16 @@ export class UncommonPageComponent implements OnInit {
     gender: 'Male'
   }
 
+  // async pipe
+
+  public myObservableTimer = interval(2000).pipe( tap( value => console.log(value)) );
+
+  public index = 0;
+  public myPromise : Promise<number> = new Promise( (res , rej) => {
+    setTimeout( () => {
+      res(this.index)    
+    }, 2000)
+  })
   constructor() { }
 
   ngOnInit(): void {
