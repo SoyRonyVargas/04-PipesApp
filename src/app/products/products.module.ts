@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { CustomPipesComponent } from './pages/custom-pipes/custom-pipes.component';
 import { CommonModule } from '@angular/common';
 import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
     NumbersPageComponent,
     UncommonPageComponent,
     CustomPipesComponent,
-    ToggleCasePipe
+    ToggleCasePipe,
+    CanFlyPipe
   ]
 })
 export class ProductsModule { }

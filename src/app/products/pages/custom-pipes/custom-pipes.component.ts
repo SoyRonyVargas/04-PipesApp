@@ -20,6 +20,11 @@ export class CustomPipesComponent implements OnInit {
       name: 'Spiderman',
       color: Color.red,
       canFly: true
+    },
+    {
+      name: 'Black Panter',
+      color: Color.black,
+      canFly: false
     }
   ]
 
