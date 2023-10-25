@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Color, Hero } from '../../types/hero.interface';
 
+export type HeroTypeKey = keyof Hero | null;
+
 @Component({
   selector: 'page-custom-pipes',
   templateUrl: './custom-pipes.component.html',
@@ -9,6 +11,7 @@ import { Color, Hero } from '../../types/hero.interface';
 export class CustomPipesComponent implements OnInit {
 
   public isUpperCased: boolean = false;
+  public orderBy?: HeroTypeKey = null;
 
   public heroes : Hero[] = [
     {
@@ -25,6 +28,16 @@ export class CustomPipesComponent implements OnInit {
       name: 'Black Panter',
       color: Color.black,
       canFly: false
+    },
+    {
+      name: 'Doctor Strange',
+      color: Color.red,
+      canFly: true
+    },
+    {
+      name: 'Joker',
+      color: Color.red,
+      canFly: false
     }
   ]
 
@@ -36,6 +49,10 @@ export class CustomPipesComponent implements OnInit {
   toggleUpperCase():void
   {
     this.isUpperCased = !this.isUpperCased
+  }
+
+  changeOrder( value: HeroTypeKey ){
+    this.orderBy = value
   }
 
 }

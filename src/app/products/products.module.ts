@@ -8,6 +8,7 @@ import { CustomPipesComponent } from './pages/custom-pipes/custom-pipes.componen
 import { CommonModule } from '@angular/common';
 import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
 import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { CanFlyPipe } from './pipes/can-fly.pipe';
     UncommonPageComponent,
     CustomPipesComponent,
     ToggleCasePipe,
-    CanFlyPipe
+    CanFlyPipe,
+    SortByPipe
   ]
 })
 export class ProductsModule { }
